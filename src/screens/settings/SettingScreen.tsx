@@ -4,7 +4,7 @@ import { View, Text } from 'react-native'
 export const SettingScreen = () => {
   return (
    <View>
-            <Text>AboutScreen</Text>
+            <Text>SettingScreen</Text>
         </View>
   )
 }

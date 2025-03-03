@@ -5,6 +5,12 @@ export const SettingScreen = () => {
   return (
    <View>
             <Text>SettingScreen</Text>
+            <Text>SettingScreen</Text>
+            <Text>SettingScreen</Text>
+            <Text>SettingScreen</Text>
+            <Text>SettingScreen</Text>
+            <Text>SettingScreen</Text>
+            <Text>SettingScreen</Text>
         </View>
   )
 }

@@ -13,3 +13,4 @@ Este es un setup optimizado para desarrollar **aplicaciones informativas** en Re
 
 ## 📁 Estructura del Proyecto
 
+# collectioncarrs

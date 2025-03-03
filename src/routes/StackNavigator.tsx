@@ -4,7 +4,21 @@ import { ProductsScreen } from '../screens/Products/ProductsScreen';
 import { SettingScreen } from '../screens/settings/SettingScreen';
 import { ProductScreen } from '../screens/Products/ProductScreen';
 
-const Stack = createStackNavigator();
+
+//typado
+
+export type RootStackParams ={
+  Home : undefined,
+  Product: {id:number, name:string},
+  Products:undefined,
+  Settings: undefined,
+}
+
+const Stack = createStackNavigator<RootStackParams>();
+
+
+
+
 
 export const StackNavigator =()=> {
   return (

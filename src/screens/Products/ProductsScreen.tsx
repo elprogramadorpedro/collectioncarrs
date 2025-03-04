@@ -30,7 +30,7 @@ export const ProductsScreen = () => {
         data={products}
         renderItem={({item}) => (
             <PrimaryButton
-              onPress={()=>navigation.navigate('Product')}
+              onPress={()=>navigation.navigate('Product', { id: item.id, name: item.name })}
               label={item.name}
             />
         )}

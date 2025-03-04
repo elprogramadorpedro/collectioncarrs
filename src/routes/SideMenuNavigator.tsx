@@ -4,10 +4,11 @@ import {
     DrawerContentScrollView,
     DrawerItemList,
   } from '@react-navigation/drawer';
-  import {StackNavigator} from './StackNavigator';
+ // import {StackNavigator} from './StackNavigator';
   import {ProfileScreen} from '../screens/profile/ProfileScreen';
   import {globalColors} from '../theme/theme';
   import {View, Text, useWindowDimensions} from 'react-native'; // Cambiado a react-native
+import { BottonTapNavigator } from './BottonTapNavigator';
 
   
   const Drawer = createDrawerNavigator();
@@ -35,9 +36,14 @@ import {
             borderRadius: 100,
             paddingHorizontal: 20,
           },
-        }}>
-        <Drawer.Screen name="StackNavigator" component={StackNavigator} />
-        <Drawer.Screen name="Profile" component={ProfileScreen} />
+        }}
+        >
+       {/* <Drawer.Screen name="StackNavigator" component={StackNavigator} />*/}
+        <Drawer.Screen name="Stack"   component={BottonTapNavigator}/>
+        <Drawer.Screen name="Profile" component={ProfileScreen}/>
+       
+
+
       </Drawer.Navigator>
     );
   };
@@ -56,7 +62,7 @@ import {
 
           <DrawerItemList {...props}/> 
 
-          <Text>Texto complementarr</Text>
+          <Text>Texto complementar</Text>
       </DrawerContentScrollView>
     );
   };
